@@ -61,3 +61,7 @@ Hal tersebut menunjukkan bahwa program subscriber dan publsiher kita menggunakan
 
 Dari screenshot diatas kita dapat melihat bahwa saya menjalankan program publisher sebanyak 2 kali. Untuk setiap kali saya ran, bisa dilihat diconsole sebelah kanan bahwa subscriber menerima 5 messages. Sehingga subscriber secara totoal menerima 10 messages. Hal ini menunjukkan bahwa komunikasi antar subscriber dan publsiher dan juga rabbitmq bekerja dengan semestinya.
 
+## Monitoring chart based on publisher.
+![alt text](./images/spike.png)
+
+Kita dapat melihat bahwa terdapat spike yang muncul setiap kali kita menjalankan program publisher. Dari dashboard rabbitmq, kita melihat bahwa spike tersebut berada di grafik messages rates. Hal ini sesuai dengan cara kerja program karena setiap kali kita run program publisher, publisher akan mengirimkan message ke rabbitmq sehingga messages ratesnya naik. Namun karena program kita hanya berjalan satu kali (tidak continous) sehingga setelah messages dikirim, program berhenti dan messages rates turun, membuat pola spike yang kita lihat.
