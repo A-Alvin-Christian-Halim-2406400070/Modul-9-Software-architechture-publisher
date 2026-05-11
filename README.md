@@ -1,5 +1,6 @@
 # Modul-9-Software-architechture-publisher
 
+## Reflection
 > How much data your publisher program will send to the message broker in one run?
 
 Pada file main.rs, kita dapat melihat code berikut
@@ -50,3 +51,6 @@ Dari sini kita dapat melihat bahwa setiap kali kita run, kita akan mengirim 5 me
 > The url of: “amqp://guest:guest@localhost:5672” is the same as in the subscriber program, what does it mean?
 
 Hal tersebut menunjukkan bahwa program subscriber dan publsiher kita menggunakan server RabbitMQ yang sama. Maka publisher akan mengirim pesan ke queue dan subscriber akan mengambil message tersebut dari queue yang sama sehingga publisher dan subscriber dapat berjalan tanpa mengetahui keberadaan satu sama lain, mereka hanya perlu tahu server RabbitMQnya.
+
+## Running RabbitMQ as Message Broker
+![alt text](./images/running-rabbit.png)
