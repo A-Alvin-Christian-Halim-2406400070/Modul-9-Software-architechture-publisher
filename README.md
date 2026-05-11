@@ -54,3 +54,10 @@ Hal tersebut menunjukkan bahwa program subscriber dan publsiher kita menggunakan
 
 ## Running RabbitMQ as Message Broker
 ![alt text](./images/running-rabbit.png)
+
+
+## Sending and processing event.
+![alt text](./images/run.png)
+
+Dari screenshot diatas kita dapat melihat bahwa saya menjalankan program publisher sebanyak 2 kali. Untuk setiap kali saya ran, bisa dilihat diconsole sebelah kanan bahwa subscriber menerima 5 messages. Sehingga subscriber secara totoal menerima 10 messages. Hal ini menunjukkan bahwa komunikasi antar subscriber dan publsiher dan juga rabbitmq bekerja dengan semestinya.
+
